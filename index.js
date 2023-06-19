@@ -1,13 +1,7 @@
-const manuBtn = document.querySelector('.manu-bar');
-const navigation = document.querySelector('.nav');
-// console.log(manuBtn, navigation);
+const manuBtn = document.querySelector('.fa-solid');
+const navigation = document.querySelector('nav');
 manuBtn.addEventListener("click", () => {
-    const visibility = navigation.getAttribute("data-visible");
-   
-    if (visibility === 'false') {
-        navigation.setAttribute('data-visible', 'true');
-    }
-    else{navigation.setAttribute('data-visible','true');
-}
+  
+    navigation.classList.toggle('active')
 }); 
-//  console.log(visibility)
+
